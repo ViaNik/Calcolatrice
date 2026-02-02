@@ -58,7 +58,7 @@ public class Espressione {
             if (token instanceof Float){
                 stack.add(token);
             }
-
+            //prova
             //se operatore
             if(tokensList.get(i)== Operatore.ADD || tokensList.get(i)== Operatore.SUB || tokensList.get(i)== Operatore.MULT || tokensList.get(i)== Operatore.DIV || tokensList.get(i)== Operatore.POW){
                 while (){
