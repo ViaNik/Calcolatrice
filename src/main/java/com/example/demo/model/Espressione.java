@@ -60,14 +60,8 @@ public class Espressione {
             }
             //prova
             //se operatore
-            if(tokensList.get(i)== Operatore.ADD || tokensList.get(i)== Operatore.SUB || tokensList.get(i)== Operatore.MULT || tokensList.get(i)== Operatore.DIV || tokensList.get(i)== Operatore.POW){
-                while (){
-                    if (){
-
-                    }else{
-
-                    }
-                }
+            if(token== Operatore.ADD || token== Operatore.SUB || token== Operatore.MULT || token== Operatore.DIV || token== Operatore.POW){
+                stack
             }
             //parentesi
             if(tokensList.get(i)== Parentesi.PARENTESI_APERTA){
@@ -86,3 +80,5 @@ public class Espressione {
         }
     }
 }
+
+//token== Operatore.ADD || token== Operatore.SUB || token== Operatore.MULT || token== Operatore.DIV || token== Operatore.POW
