@@ -61,7 +61,9 @@ public class Espressione {
             //prova
             //se operatore
             if(token== Operatore.ADD || token== Operatore.SUB || token== Operatore.MULT || token== Operatore.DIV || token== Operatore.POW){
-                stack
+                while (!stack.isEmpty()){
+
+                }
             }
             //parentesi
             if(tokensList.get(i)== Parentesi.PARENTESI_APERTA){
