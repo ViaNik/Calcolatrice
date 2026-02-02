@@ -1,10 +1,12 @@
 package com.example.demo.model;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Espressione {
     private String inputExpr;
     ArrayList tokensList;
+    ArrayList stack= new ArrayList<>();
 
     public Espressione(String inputExpr) {
         this.inputExpr = inputExpr;
@@ -51,7 +53,13 @@ public class Espressione {
     }
 
     public void ShuntingYard(){
-        for (int i= 0; i<tokensList.toArray().length; i++){
+        for (Object token: tokensList){
+            //se numero
+            if (token instanceof Float){
+                stack.add(token);
+            }
+
+            //se operatore
             if(tokensList.get(i)== Operatore.ADD || tokensList.get(i)== Operatore.SUB || tokensList.get(i)== Operatore.MULT || tokensList.get(i)== Operatore.DIV || tokensList.get(i)== Operatore.POW){
                 while (){
                     if (){
@@ -61,6 +69,7 @@ public class Espressione {
                     }
                 }
             }
+            //parentesi
             if(tokensList.get(i)== Parentesi.PARENTESI_APERTA){
 
             }
