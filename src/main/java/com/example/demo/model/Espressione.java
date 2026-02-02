@@ -38,7 +38,9 @@ public class Espressione {
                     break;
                 case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9':
                     //TODO
-
+                    //int n= 0;
+                    //tokensList.add(n);
+                    //break;
                     //Per sicurezza
 
                 default:
@@ -48,9 +50,30 @@ public class Espressione {
         }
     }
 
-    //public void ShuntingYard(){
-    //    while(){
-    //        if ()
-    //    }
-    //}
+    public void ShuntingYard(){
+        for (int i= 0; i<tokensList.toArray().length; i++){
+            if(tokensList.get(i)== Operatore.ADD || tokensList.get(i)== Operatore.SUB || tokensList.get(i)== Operatore.MULT || tokensList.get(i)== Operatore.DIV || tokensList.get(i)== Operatore.POW){
+                while (){
+                    if (){
+
+                    }else{
+
+                    }
+                }
+            }
+            if(tokensList.get(i)== Parentesi.PARENTESI_APERTA){
+
+            }
+            if(tokensList.get(i)== Parentesi.PARENTESI_CHIUSA){
+                while (){
+
+                }
+            }
+        }
+        //Finiti token da leggere
+
+        while (){
+
+        }
+    }
 }
