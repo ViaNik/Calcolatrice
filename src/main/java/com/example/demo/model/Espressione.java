@@ -66,7 +66,7 @@ public class Espressione {
                 }
             }
             //parentesi
-            if(tokensList.get(i)== Parentesi.PARENTESI_APERTA){
+            if(tokensList.get()== Parentesi.PARENTESI_APERTA){
 
             }
             if(tokensList.get(i)== Parentesi.PARENTESI_CHIUSA){
